@@ -1,14 +1,8 @@
-def factorial(n:int) -> int:
-  x = 1
-  for i in range(n):
-    x*=n
-    n-=1
-  return x
-
+def fib(n:int) -> int:
+  if n < 2:
+    return n
+  return fib(n-1) + fib(n-2)
 def main():
-  print("Hello, world!")
-  print(factorial(5))
-  
-  
+  print(fib(5))
 if __name__ == "__main__":
   main()
