@@ -1,8 +1,14 @@
-def fib(n:int) -> int:
-  if n < 2:
-    return n
-  return fib(n-1) + fib(n-2)
+def chlen(n:int):
+  lst =[['']*4 for i in range(n+1)]
+  for i in range(len(lst)):
+    lst[i][1] = "| "
+    lst[i][2] = "| "
+  lst[-1] = ["(",")","(",")",]
+  for x in lst:
+    print(x)
+
 def main():
-  print(fib(5))
+  chlen(5)
+  
 if __name__ == "__main__":
   main()
